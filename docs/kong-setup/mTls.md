@@ -50,10 +50,4 @@ Para namespace de data plane
   kubectl create secret -n kong-dp generic kong-enterprise-license --from-file=license=./license.json
 ```
 
-<<<<<<< HEAD
-<p>
-  Você agora atingiu o final deste módulo ao provisionar o par de chaves de certificado, necessário para provisionar o Kong Control Plane
-</p> -->
-=======
 Você agora atingiu o final deste módulo ao provisionar o par de chaves de certificado, necessário para provisionar o Kong Control Plane
->>>>>>> master
