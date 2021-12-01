@@ -58,7 +58,7 @@ O Control Plane usa a porta 8005 para publicar qualquer nova configuração de A
 ```bash
   kubectl get all -n kong
 ```
-**Resultado esperado: a conclusão da instalação do plano de controle Kong pode levar de 2 a 3 minutos para ser concluído. Você deve ver um resultado semelhante ao seguinte, com pods no estado de execução**
+**Resultado esperado: a conclusão da instalação do control-plane Kong pode levar de 2 a 3 minutos para ser concluído. Você deve ver um resultado semelhante ao seguinte, com pods no estado de execução**
 
 ```bash
   NAME                                  READY   STATUS      RESTARTS   AGE

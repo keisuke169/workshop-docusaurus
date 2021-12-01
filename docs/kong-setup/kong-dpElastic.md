@@ -19,7 +19,7 @@ NAME                 TYPE           CLUSTER-IP     EXTERNAL-IP                  
 kong-dp-kong-proxy   LoadBalancer   10.100.12.30   a6bf3f71a14a64dba850480616af8fc9-1188819016.eu-central-1.elb.amazonaws.com   80:32336/TCP,443:31316/TCP   7m25s
 ```
 
-Observe, neste ponto do workshop, há apenas um pod captando o tráfego do plano de dados.
+Observe, neste ponto do workshop, há apenas um pod captando o tráfego do Data-Plane.
 
 ```bash
 kubectl get pod -n kong-dp -o wide
@@ -134,7 +134,7 @@ metrics-server-9f459d97b-kxzg2   1/1     Running   0          38s
 ```
 
 ## Ative o HPA
-Ainda usando o Helm, vamos atualizar nossa implantação do plano de dados, incluindo configurações novas e específicas para HPA:
+Ainda usando o Helm, vamos atualizar nossa implantação do data-plane, incluindo configurações novas e específicas para HPA:
 
 ```bash
 helm upgrade kong-dp kong/kong -n kong-dp \
@@ -174,7 +174,7 @@ helm upgrade kong-dp kong/kong -n kong-dp \
 ```
 
 ## Checking HPA
-Depois de enviar o comando, verifique a implantação novamente. Como não consumimos o plano de dados, devemos ver um único pod em execução. Nas próximas seções, enviaremos solicitações ao Plano de dados e um novo pod será criado para lidar com elas.
+Depois de enviar o comando, verifique a implantação novamente. Como não consumimos o data-plane, devemos ver um único pod em execução. Nas próximas seções, enviaremos solicitações ao Data-Plane e um novo pod será criado para lidar com elas.
 
 ```bash
 kubectl get pod -n kong-dp
@@ -199,4 +199,4 @@ NAME           REFERENCE                 TARGETS   MINPODS   MAXPODS   REPLICAS 
 kong-dp-kong   Deployment/kong-dp-kong   0%/75%    1         20        1          80s
 ```
 
-Deixe o HPA definido para que possamos vê-lo em ação ao enviar solicitações ao Plano de dados.
+Deixe o HPA definido para que possamos vê-lo em ação ao enviar solicitações ao Data-Plane.

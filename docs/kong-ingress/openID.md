@@ -69,7 +69,7 @@ Clique em “Sign up” para se cadastrar.
 
 Após inserir seus dados clique em “Sign up”. O Cognito criará um usuário e solicitará o código de verificação enviado por seu e-mail.
 
-Após digitar o código, o Cognito irá autenticá-lo, emitirá um Código de Autorização e o redirecionará de volta à URL original (Plano de Dados). O plano de dados se conecta ao Cognito com o código de autorização para obter o token de acesso e, em seguida, permite consumir a URL.
+Após digitar o código, o Cognito irá autenticá-lo, emitirá um Código de Autorização e o redirecionará de volta à URL original (data-plane). O plano de dados se conecta ao Cognito com o código de autorização para obter o token de acesso e, em seguida, permite consumir a URL.
 
 ## Cleanup
 Exclua o plugin do Kong executando o seguinte comando. A limpeza garante que este plugin não interfira com quaisquer outros módulos no workshop para fins de demonstração e cada código do módulo do workshop continua a funcionar independentemente.

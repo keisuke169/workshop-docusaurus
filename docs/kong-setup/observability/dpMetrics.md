@@ -25,9 +25,9 @@ EOF
 ```
 
 ## Exponha o endpoint de métricas do data plane com um serviço Kubernete
-A próxima coisa a fazer é expor a porta de métricas do plano de dados como um novo serviço Kubernetes. O novo serviço Kubernetes será consumido pelo Prometheus Service Monitor que iremos configurar mais tarde.
+A próxima coisa a fazer é expor a porta de métricas do data-plane como um novo serviço Kubernetes. O novo serviço Kubernetes será consumido pelo Prometheus Service Monitor que iremos configurar mais tarde.
 
-O novo serviço Kubernetes será baseado na porta de métricas 8100 fornecida pelo plano de dados. Definimos a porta durante a instalação do Plano de dados usando o parâmetro **--set env.status_listen = 0.0.0.0:8100**. Você pode verificar a porta em execução:
+O novo serviço Kubernetes será baseado na porta de métricas 8100 fornecida pelo data-plane. Definimos a porta durante a instalação do Data-Plane usando o parâmetro **--set env.status_listen = 0.0.0.0:8100**. Você pode verificar a porta em execução:
 
 ```bash
 kubectl describe pod kong-dp-kong -n kong-dp | grep Ports
@@ -39,7 +39,7 @@ kubectl describe pod kong-dp-kong -n kong-dp | grep Ports
   Host Ports:     0/TCP, 0/TCP, 0/TCP
 ```
 
-Para criar um novo serviço Kubernetes para expor as métricas do plano de dados, execute o seguinte
+Para criar um novo serviço Kubernetes para expor as métricas do data plane, execute o seguinte
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -62,7 +62,7 @@ spec:
 EOF
 ```
 
-Observe que o novo serviço Kubernetes está selecionando o serviço Kubernetes plano de dados existente usando seu rótulo específico **app.kubernetes.io/name: kong**
+Observe que o novo serviço Kubernetes está selecionando o serviço Kubernetes de data-plane existente usando seu rótulo específico **app.kubernetes.io/name: kong**
 
 Use pode verificar o rótulo em execução
 ```bash
@@ -189,7 +189,7 @@ subjects:
   namespace: kong-dp
 EOF
 ```
-Instancie um serviço Prometheus para o plano de dados Kong
+Instancie um serviço Prometheus para o data-plane Kong
 
 ```bash
 cat <<EOF | kubectl apply -f -

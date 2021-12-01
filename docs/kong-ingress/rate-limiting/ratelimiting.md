@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Adicionar plugin de limitação de taxa
+# Adicionar plugin rate-limiting
 
 Adicione o plugin de limitação de acesso com uma política de limitação de acesso global:
 
