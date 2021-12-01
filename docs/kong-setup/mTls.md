@@ -3,14 +3,9 @@ sidebar_position: 1
 ---
 
 # mTLS Setup
-<<<<<<< HEAD
-<!-- 
-<h1>mTLS Setup</h1>
-=======
 Mutual TLS, ou mTLS para abreviar, é um método para autenticação mútua. O mTLS garante que as partes em cada extremidade de uma conexão de rede sejam quem afirmam ser, verificando se ambas têm a chave privada correta. As informações em seus respectivos certificados TLS fornecem verificação adicional.
 
 O mTLS é freqüentemente usado em estruturas de segurança Zero Trust para verificar usuários, dispositivos e servidores dentro de uma organização. Também pode ajudar a manter as APIs seguras.
->>>>>>> master
 
 Zero Trust significa que nenhum usuário, dispositivo ou tráfego de rede é confiável por padrão, uma abordagem que ajuda a eliminar muitas vulnerabilidades de segurança.
 
