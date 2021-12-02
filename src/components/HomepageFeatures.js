@@ -9,7 +9,6 @@ const FeatureList = [
     description: (
       <>
       A Plataforma de conectividade de serviços end-to-end para multi-cloud e organizações híbridas
-     
       </>
     ),
   },
@@ -23,11 +22,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Rode K8s em qualquer lugar',
-    Svg: require('../../static/img/Kubernetes_logo.svg').default,
+    title: 'Rode Kubernetes em qualquer lugar',
+    Svg: require('../../static/img/kubernetes-seeklogo.com.svg').default,
     description: (
       <>
-       O Kubernetes é um sistema de código aberto para automatizar a implantação, a escalabilidade e o gerenciamento de aplicações em contêineres.
+       O Kubernetes é um sistema de código aberto para automatizar a implantação, a escalabilidade e o gerenciamento de aplicações em conteiners.
       </>
     ),
   },

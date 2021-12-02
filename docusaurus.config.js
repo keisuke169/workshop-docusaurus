@@ -57,8 +57,9 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            
+            href: "https://www.vertigo.com.br/",
+            label: "Go to Vertigo",
             position: "right",
           },
         ],
@@ -79,16 +80,16 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Linkedin",
+                href: "https://www.linkedin.com/company/vertigo-tecnologia/",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Youtube",
+                href: "https://www.youtube.com/user/brvertigo",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/vertigobr",
               },
             ],
           },
@@ -100,13 +101,13 @@ const config = {
               //   to: "/blog",
               // },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "KongHQ",
+                href: "https://konghq.com/",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Vertigo, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
