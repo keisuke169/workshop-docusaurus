@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favi-vertigo.png",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
@@ -43,17 +43,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Kong Workshop",
+        title: "Home",
         logo: {
           alt: "Workshop provido pela Vertigo",
-          src: "img/logo.svg",
+          src: "img/favi-vertigo.png",
         },
         items: [
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Kong Workshop",
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {

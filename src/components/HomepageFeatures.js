@@ -4,32 +4,30 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Kong Enterprise',
+    Svg: require('../../static/img/kong-combination-mark-colors.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      A Plataforma de conectividade de serviços end-to-end para multi-cloud e organizações híbridas
+     
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Aws Elastic Kubernetes Service(EKS)',
+    Svg: require('../../static/img/Amazon_Web_Services-Logo.wine.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+ É um serviço gerenciado que você pode usar para executar o Kubernetes na AWS.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Rode K8s em qualquer lugar',
+    Svg: require('../../static/img/Kubernetes_logo.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+       O Kubernetes é um sistema de código aberto para automatizar a implantação, a escalabilidade e o gerenciamento de aplicações em contêineres.
       </>
     ),
   },
